@@ -1,0 +1,5 @@
+com\javacodegeeks\examples\controller\Controller.class
+com\javacodegeeks\examples\bo\Role.class
+com\javacodegeeks\examples\bo\User.class
+com\javacodegeeks\examples\WebAppInitializer.class
+com\javacodegeeks\examples\controller\MainController.class
