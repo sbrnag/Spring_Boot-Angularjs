@@ -1,0 +1,17 @@
+<div class="section">
+    <h3>{{headingTitle}}</h3>
+    <div ng-submit="submit()" ng-controller="formController">
+        <form>
+    Name: <input type="text" ng-model="user.name" required>
+    Age : <input type="number" ng-model="user.age">
+    <input type="submit" id="submit" value="Submit" />
+  </form>
+    
+    
+    <div>
+        <ul type="square" ng-repeat="usr in users">
+            <li>{{usr.name}}   {{usr.age}}</li>
+        </ul>
+    </div>
+    </div>
+</div>

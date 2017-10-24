@@ -9,6 +9,10 @@ app.config(function($routeProvider){
             templateUrl: '/views/roles.html',
             controller: 'rolesController'
         })
+        .when('/form',{
+            templateUrl: '/views/form.html',
+            controller: 'formController'
+        })
         .otherwise(
             { redirectTo: '/'}
         );

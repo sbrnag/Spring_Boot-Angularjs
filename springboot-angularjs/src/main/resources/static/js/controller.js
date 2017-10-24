@@ -17,3 +17,28 @@ app.controller('rolesController', function($scope, $http) {
 		$scope.roles = data;
 	})
 });
+
+app.controller('formController', function($scope, $http) {
+	$scope.headingTitle = "save user";
+	
+	$scope.user = {};
+	$scope.users = [];
+
+	$scope.submit = function() {
+		
+		$http.post('/saveUser', $scope.user)
+        .then(
+            function (response) {
+                $scope.users.push($scope.user);
+                $scope.user = {};
+            },
+            function (errResponse) {
+               console.error('Error while creating User : '+errResponse.data.errorMessage);
+               alert('error');
+            }
+        );
+		
+	};
+
+	
+});
